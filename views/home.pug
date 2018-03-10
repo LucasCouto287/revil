@@ -6,7 +6,20 @@ block head
 
 block content
   #body
+    nav#nav.size-limit-nav
+      ul#nav-links
+        li
+          a(href="/dashboard") Dashboard
+        li
+          a(href="/login") Login
+        li
+          a(href="/register") Register
     section#header
+      //- div#site-accent
       h1.heading.size-limit-heading Revil
-    section#about
-      h1.heading.size-limit-heading#about-heading About
+      p#about-text.size-limit-about
+        | #[em Revil is a web based application] that allows youth to discover and engage in fresh local opportunities and activities curated specifically for you!
+      
+//- block footer
+//-   footer#footer
+//-     p#copyright Revil &#169; 2018
