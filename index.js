@@ -1,7 +1,8 @@
 const express = require('express'),
       compression = require('compression'),
       app = express(),
-      routes = require('./routes/main');
+      routes = require('./routes/main'),
+      cacheTime = 30 * 24 * 60 * 60 * 1000,
       port = 7000
 
 // compress all app responses (before sending to client)
@@ -16,4 +17,5 @@ for (let pages in routes){
   app.use(pages, routes[pages]);
 }
 
+// run the site on loclahost:7000 (using nodemon/node on terminal)
 app.listen(port, () => console.log(`Revil site running on port ${port}!`))
