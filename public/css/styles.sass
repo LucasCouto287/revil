@@ -35,6 +35,9 @@ $select-color: #1d1d1d
 html
   height: 100vh
 
+h1,h2,h3,h4,h5
+  font-family: "Montserrat"
+
 \::selection
   background-color: $select-background
   color: $select-color
@@ -53,8 +56,11 @@ html
   +responsive-font(2vw, 15px, 21px)
 
 .size-limit-dashboard-heading
-  +responsive-font(2vw, 25px, 29px)
-
+  +responsive-font(2vw, 20px, 29px)
+  align-self: flex-start
+  position: absolute
+  left: 3%
+  top: 19%
 body
   background: white
   font-family: sans-serif
@@ -122,6 +128,10 @@ nav
 
 .orange-background
   background-color: #D8531F !important
+
+.white-background
+  background: gainsboro !important
+  color: #2a2a2a !important
 
 #back-link
   background: #F6AB73
@@ -227,3 +237,37 @@ nav
 
 .register-category
   margin-right: 5px
+
+.dsh-card
+  position: absolute
+  background: #f6f4f4
+  width: 40%
+  height: 38%
+  border-radius: 30px
+  box-shadow: 2px 3px 17px #b4b4b4
+  display: flex
+  align-items: flex-start
+  flex-direction: column
+
+.dsh-card > h3, .dsh-card > h4
+  margin-left: 30px
+
+#dsh-left-card
+  left: 3%
+
+#dsh-right-card
+  right: 3%
+  height: 50%
+
+#map-img
+  border-radius: 10px
+  width: 100px
+
+.event-title
+  margin-top: 5px
+
+.event-description
+  margin-left: 35px !important
+
+.dsh-card-heading
+  color: lighten(#2a2a2a, 25%)
