@@ -23,11 +23,15 @@ block content
         h4.event-title.event-description #[em When:] March 10 - March 11, 2018
       div#dsh-right-card.dsh-card
         h4.dsh-card-heading Details
-        h4.event-title.event-description #[em Where:] 800 Macleod Trail SE, Calgary
-        a(target="_blank" href="https://www.eventbrite.ca/e/mayors-youth-council-innovation-challenge-tickets-42025630793" title="where")
-          img#map-img(alt="map to show location" src="http://localhost:7000/img/map.png")
-        a(href="#")#like like
-        a(href="#")#dislike dislike
+        //- h4.event-title.event-description #[em Where:] 800 Macleod Trail SE, Calgary
+        h5.event-title.event-description#long-description #[em Description:] A two day event where teams of high school students from across Calgary work together and collaborate to create a business idea/model that can improve the City of Calgary for youth. 
+        a#img-link(target="_blank" href="https://www.eventbrite.ca/e/mayors-youth-council-innovation-challenge-tickets-42025630793" title="where")
+          img#map-img(alt="map to show location" src="/img/map.png")
+        
+        h5.event-title.event-description#preference-text #[em Based on your preference of:] Educational Events
+        a(href="#")#like.buttons like
+        a(href="#")#dislike.buttons dislike
+        
       
 block footer
   footer#footer
