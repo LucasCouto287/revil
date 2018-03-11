@@ -1,0 +1,23 @@
+extends layout
+
+block head
+  // homepage CSS file
+  link(rel="stylesheet" href="/css/home.min.css?v=1")
+
+block content
+  #body
+    nav#nav.size-limit-nav
+      a(href="/" title="homepage")#logo-nav
+        img#logo-img(src="/img/nav-logo.png")
+      ul#nav-links
+        li#login-button
+          a(href="/login")=name
+    section#header
+      //- div#site-accent
+      h1.heading.size-limit-dashboard-heading
+        | Welcome to your Revil dashboard, #[span=name]
+      
+      
+block footer
+  footer#footer
+    p#copyright Revil &#169; 2018

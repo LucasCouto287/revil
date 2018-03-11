@@ -1,9 +1,13 @@
 /* main routes controller file */
 
 let homeRoute = require("./home"),
-    loginRoute = require('./login');
+    loginRoute = require('./login'),
+    registerRoute = require('./register'),
+    dashboardRoute = require('./dashboard');
 
 module.exports = {
     "/": homeRoute,
-    "/login": loginRoute
+    "/login": loginRoute,
+    "/register": registerRoute,
+    "/dashboard": dashboardRoute
 };

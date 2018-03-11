@@ -14,8 +14,8 @@ block content
     //-       a(href="/register") Register
     //-     li#login-button
     //-       a(href="/login") Login
-    h4#back-link
-      a(href="/") Homepage
+    a(href="/" title="homepage")#logo-nav
+      img#logo-img(style="width:80px;" src="/img/nav-logo.png")
     section#header.orange-background
       //- div#site-accent
       
@@ -27,7 +27,7 @@ block content
           br
           input(placeholder='password', type='password')
           br
-          a(href="/dashboard")#login-submit sign in
+          a(href="/dashboard/abdullah")#login-submit sign in
           br
           span
         a(href='#') forgot password?

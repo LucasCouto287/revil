@@ -1,0 +1,44 @@
+extends layout
+
+block head
+  link(rel="stylesheet" href="/css/home.min.css?v=1")
+
+block content
+  #body
+    // don't need nav on login page
+    nav#nav.size-limit-nav
+      ul#nav-links
+        li
+          a(href="/dashboard") Dashboard
+        li#login-button
+          a(href="/login") Login
+      a(href="/" title="homepage")#logo-nav
+        img#logo-img(src="/img/nav-logo.png")
+    section#header
+      div#register-card
+        form#register-form
+          h1.heading.size-limit-heading#login-heading Register
+          p.register-question 1) What is your name?
+          input(placeholder='name', type='text')
+          p.register-question 2) How old are you? This is optional.
+          input(placeholder='age', type='password')
+          p.register-question 3) From the following, which one(s) are you most interested in?
+          div#register-categories 
+            input.register-checkbox(type='checkbox') 
+            p.register-category Volunteering
+            input.register-checkbox(type='checkbox') 
+            p.register-category Sports
+            input.register-checkbox(type='checkbox') 
+            p.register-category Tutoring
+            input.register-checkbox(type='checkbox') 
+            p.register-category Educational events
+            input.register-checkbox(type='checkbox') 
+            p.register-category Grants/Scholarship oppurtunities
+          a(href="/login" style="")#login-submit sign up
+          br
+          span
+        //- a(href='#') forgot password?  
+      
+block footer
+  footer#footer
+    p#copyright Revil &#169; 2018
