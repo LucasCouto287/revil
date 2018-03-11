@@ -63,3 +63,105 @@ body
   // font-size: 50px
   margin: 0
 
+nav
+  position: absolute
+  background: rgba(50, 50, 50, 0.5)
+  width: 100%
+  height: 60px
+  display: flex
+  justify-content: flex-end
+
+
+#nav-links
+  list-style: none
+  font-family: "Roboto"
+  display: inline-flex
+  align-items: center
+  justify-content: flex-end
+
+#nav-links > li > a
+  transition: 0.3s
+  color: gainsboro
+  &:hover
+    // color: darken(gainsboro, 20%)
+    color: lighten(#E6731E, 20%)
+
+
+#nav-links > li
+  margin-right: 20px
+
+#footer
+  position: absolute
+  color: gainsboro
+  // margin-left: 20px
+  // width: 100%
+  background: rgba(50, 50, 50, 0.5)
+  width: 100vw
+  bottom: 0
+  font-family: "Roboto"
+  color: gainsboro
+
+#copyright
+  margin-left: 20px
+
+
+#login-button
+  background: #E6731E
+  border-radius: 40px
+  padding: 6px 15px 6px 15px
+
+.orange-background
+  background-color: #E6731E !important
+
+#back-link
+  background: #F6AB73
+  border-radius: 40px
+  padding: 6px 15px 6px 15px
+  position: absolute
+  margin-bottom: 0
+  margin-left: 15px
+  a
+    color: blanchedalmond
+
+#login-heading
+  margin-top: -30px
+
+#login-card
+  width: 300px
+  height: 400px
+  margin-top: -25px
+  background: rgba(90,90,90,0.1)
+  border-radius: 40px
+
+#login-card > a
+  color: gainsboro
+#login-form
+  display: flex
+  margin-top: 23%
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+#login-form > input
+  font-size: 17px
+  border: none
+  color: gainsboro
+  width: 70%
+  border-bottom: 2px solid rgba(74, 74, 74, 0.57)
+  margin-top: 10px
+  background: inherit
+  padding: 10px
+
+#login-submit
+  color: #875a39
+  font-size: 19px
+  margin-top: 20px
+  padding: 10px 15px 10px 15px
+  background: #fff9
+  border-radius: 15px
+
+\::-webkit-input-placeholder
+  color: white
+
+\::-moz-placeholder
+  color: white

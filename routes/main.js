@@ -1,7 +1,9 @@
 /* main routes controller file */
 
-let home = require("./home")
+let homeRoute = require("./home"),
+    loginRoute = require('./login');
 
 module.exports = {
-    "/": home
+    "/": homeRoute,
+    "/login": loginRoute
 };

@@ -1,0 +1,40 @@
+extends layout
+
+block head
+  link(rel="stylesheet" href="/css/home.min.css?v=1")
+
+block content
+  #body
+    // don't need nav on login page
+    //- nav#nav.size-limit-nav
+    //-   ul#nav-links
+    //-     li
+    //-       a(href="/dashboard") Dashboard
+    //-     li
+    //-       a(href="/register") Register
+    //-     li#login-button
+    //-       a(href="/login") Login
+    h4#back-link
+      a(href="/") Homepage
+    section#header.orange-background
+      //- div#site-accent
+      
+      //- hr
+      div#login-card
+        form#login-form
+          h1.heading.size-limit-heading#login-heading Login
+          input(placeholder='username', type='text')
+          br
+          input(placeholder='password', type='password')
+          br
+          a(href="/dashboard")#login-submit sign in
+          br
+          span
+        a(href='#') forgot password?
+
+        
+      
+      
+block footer
+  footer#footer
+    p#copyright Revil &#169; 2018

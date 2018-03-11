@@ -1,7 +1,7 @@
 extends layout
 
 block head
-  // homepage CSSS file
+  // homepage CSS file
   link(rel="stylesheet" href="/css/home.min.css?v=1")
 
 block content
@@ -11,15 +11,16 @@ block content
         li
           a(href="/dashboard") Dashboard
         li
-          a(href="/login") Login
-        li
           a(href="/register") Register
+        li#login-button
+          a(href="/login") Login
     section#header
       //- div#site-accent
       h1.heading.size-limit-heading Revil
+      hr
       p#about-text.size-limit-about
         | #[em Revil is a web based application] that allows youth to discover and engage in fresh local opportunities and activities curated specifically for you!
       
-//- block footer
-//-   footer#footer
-//-     p#copyright Revil &#169; 2018
+block footer
+  footer#footer
+    p#copyright Revil &#169; 2018
