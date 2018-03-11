@@ -7,6 +7,8 @@ block head
 block content
   #body
     nav#nav.size-limit-nav
+      a(href="/" title="homepage")#logo-nav
+        img#logo-img(src="/img/nav-logo.png")
       ul#nav-links
         li
           a(href="/dashboard") Dashboard
@@ -19,7 +21,7 @@ block content
       h1.heading.size-limit-heading Revil
       hr
       p#about-text.size-limit-about
-        | #[em Revil is a web based application] that allows youth to discover and engage in fresh local opportunities and activities curated specifically for you!
+        | #[strong Revil is a web based application] that allows youth to discover and engage in fresh local opportunities and activities curated individually for them!
       
 block footer
   footer#footer
